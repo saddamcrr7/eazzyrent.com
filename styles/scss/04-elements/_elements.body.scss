@@ -1,0 +1,20 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  padding-top: 61px;
+
+  &.is-blocked,
+  &.is-modal-open,
+  &.is-gradpanel-open,
+  &.lg-on {
+    overflow: hidden;
+  }
+
+  &.is-nav-mobile-open {
+    overflow: hidden;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding-top: 50px;
+  }
+}

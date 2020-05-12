@@ -1,0 +1,20 @@
+{
+  "name": "eazzyrent.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass styles/scss:styles/css",
+    "start" : "sass --watch styles/scss:styles/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saddamcrr7/eazzyrent.com.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saddamcrr7/eazzyrent.com/issues"
+  },
+  "homepage": "/eazzyrent.com#"
+}
