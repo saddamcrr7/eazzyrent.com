@@ -1,0 +1,41 @@
+.o-integrations {
+    padding: {
+        top: 80px;
+        bottom: 60px;
+    }
+
+    background: $white;
+
+    &__container {
+        @include make-container();
+        @include make-container-max-widths();
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: $font-weight-bold;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    &__sub {
+        font-size: 15px;
+        color: #6c757d;
+        text-align: center;
+    }
+
+    &__item {
+        max-width: 250px;
+    }
+
+    &__item-image {
+        max-width: 100%;
+        height: auto;
+    }
+}

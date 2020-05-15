@@ -726,6 +726,134 @@ a:hover, a:active, a:focus {
   color: #6c757d;
 }
 
+.o-integrations {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  background: #fff;
+}
+.o-integrations__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .o-integrations__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .o-integrations__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .o-integrations__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .o-integrations__container {
+    max-width: 1140px;
+  }
+}
+.o-integrations__row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.o-integrations__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}
+.o-integrations__sub {
+  font-size: 15px;
+  color: #6c757d;
+  text-align: center;
+}
+.o-integrations__item {
+  max-width: 250px;
+}
+.o-integrations__item-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.o-testimonials {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background: #f8f9fa;
+}
+.o-testimonials__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .o-testimonials__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .o-testimonials__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .o-testimonials__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .o-testimonials__container {
+    max-width: 1140px;
+  }
+}
+.o-testimonials__content {
+  text-align: center;
+}
+.o-testimonials__section-title {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #520FAC;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.o-testimonials__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.o-testimonials__sub {
+  font-size: 15px;
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+.o-testimonials__slider-container {
+  margin: 0 auto;
+  padding: 0;
+  z-index: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.o-testimonials__slider-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  transition-property: transform;
+}
+.o-testimonials__slider-item {
+  flex: 0 0 351px;
+}
+
 .c-about-item {
   padding: 30px;
   text-align: center;
