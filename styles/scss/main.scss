@@ -48,11 +48,14 @@
 @import '05-objects/objects.integrations';
 @import '05-objects/objects.testimonials';
 @import '05-objects/objects.priching';
+@import '05-objects/objects.contact';
 
 // 06. Components
 @import '06-components/components.about-item';
 @import '06-components/components.testimonial';
 @import '06-components/components.package';
+@import '06-components/components.input';
+@import '06-components/components.checkbox';
 
 // 99. Utilities
 @import '99-utilities/utilities.clearfix';
