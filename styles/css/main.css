@@ -854,7 +854,28 @@ a:hover, a:active, a:focus {
   transition-property: transform;
 }
 .o-testimonials__slider-item {
-  flex: 0 0 351px;
+  display: flex;
+  flex: 0 0 100%;
+}
+.o-testimonials__slider-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.o-testimonials__slider-pagination .swiper-pagination-bullet {
+  display: block;
+  width: 12px;
+  height: 7px;
+  margin: 20px 5px;
+  border: 1px solid #520FAC;
+  background-color: #520FAC;
+  opacity: 0.4;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.o-testimonials__slider-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
 }
 
 .c-about-item {
@@ -880,6 +901,7 @@ a:hover, a:active, a:focus {
 .c-testimonial {
   background: #fff;
   padding: 20px;
+  margin-left: 20px;
 }
 .c-testimonial__icon svg {
   width: 40px;
