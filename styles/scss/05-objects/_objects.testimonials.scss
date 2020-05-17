@@ -58,6 +58,30 @@
     }
 
     &__slider-item {
-        flex: 0 0 351px;
+        display: flex;
+        flex: 0 0 100%;
+    }
+
+    &__slider-pagination {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .swiper-pagination-bullet {
+            display: block;
+            width: 12px;
+            height: 7px;
+            margin: 20px 5px;
+            border: 1px solid $color-violet;
+            background-color: $color-violet;
+            opacity: 0.4;
+            cursor: pointer;
+            border-radius: 3px;
+
+            &-active {
+                opacity: 1;
+            }
+        }
     }
 }
