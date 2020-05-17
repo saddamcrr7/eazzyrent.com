@@ -1,0 +1,83 @@
+.c-package {
+    $root: &;
+
+    width: 100%;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+
+    &__header {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        font-size: 20px;
+        font-weight: $font-weight-bold;
+    }
+
+    &__price {
+        font-size: 30px;
+        margin-bottom: 10px;
+        font-weight: $font-weight-bold;
+    }
+
+    &__description {
+        font-size: 14px;
+        color: #000000c7;
+        line-height: 15px;
+    }
+
+    &__body {
+        margin-bottom: 30px;
+    }
+
+    &__features {
+        padding-left: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+    &__feature {
+        font-size: 15px;
+        color: $color-grey;
+        margin-bottom: 8px;
+    }
+
+    &__footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__cta {
+        padding: 13px 32px;
+        font-size: 14px;
+        transition: all 0.5s;
+        letter-spacing: 0.6px;
+        color: #fff;
+        border: 2px solid $color-violet;
+        background-color: $color-violet;
+        font-weight: 700;
+        border-radius: 35px;
+
+        @include on-event {
+            color: $white;
+        }
+    }
+
+    &.is-active {
+        background-color: $color-violet;
+
+        #{$root} {
+
+            &__header,&__description, &__feature {
+                color: $white;
+            }
+
+            &__cta {
+                border-color: $white;
+            }
+
+        }
+    }
+}
