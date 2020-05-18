@@ -54,11 +54,11 @@
         line-height: 1.6;
         box-shadow: 0 0 35px rgba(112, 112, 112, 0.1);
         border-radius: 16px;
-        background-color: #ffffff;
+        background-color: $color-blue;
         margin-bottom: 20px;
         padding: 48px;
         padding-top: 25px;
-        color: $color-grey;
+        color: $white;
 
         @include media-breakpoint-up(lg) {
             margin-top: 150px;
@@ -70,8 +70,9 @@
         border-radius: 16px;
         background-color: #ffffff;
         padding: 48px;
-        
-        .c-input, .c-checkbox {
+
+        .c-input,
+        .c-checkbox {
             margin-bottom: 15px;
         }
     }
@@ -108,8 +109,8 @@
         box-shadow: none !important;
         text-transform: capitalize;
         outline: none !important;
-        border: 1px solid #520FAC;
-        background-color: #520FAC;
+        border: 1px solid $color-violet;
+        background-color: $color-violet;
         font-weight: 700;
         border-radius: 4px;
         cursor: pointer;
