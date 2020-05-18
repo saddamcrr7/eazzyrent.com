@@ -55,10 +55,20 @@ if (faqItems.length) {
           }
         }
     })
-
-      
-
-
     })
   })
 }
+
+
+var navbar = document.querySelector('.c-navbar')
+var onScroll = () => {
+  var scroll = document.documentElement.scrollTop
+
+  if (scroll > 0) {
+    navbar.classList.add("is-scrolled");
+  } else {
+    navbar.classList.remove("is-scrolled")
+  }
+}
+
+window.addEventListener('scroll', onScroll)

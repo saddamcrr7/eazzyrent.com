@@ -1,0 +1,53 @@
+.c-navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    transition: 0.3s;
+
+    &.is-scrolled {
+        background: $white;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 18px 1px;
+    }
+
+    &__container {
+        @include make-container();
+        @include make-container-max-widths();
+    }
+
+    &__row {
+        display: flex;
+        align-items: center;
+    }
+
+    &__brand {
+        margin-right: 40px;
+    }
+
+    &__nav {
+        padding-left: 0;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        list-style: none;
+        margin-bottom: 0;
+    }
+
+    &__nav-item {
+
+    }
+
+    &__nav-link {
+        font-size: 15px;
+        font-weight: $font-weight-bold;
+        color: $black;
+        margin: 0 7px;
+        padding: 8px;
+        transition: 0.3s;
+
+        &:hover {
+            color: $color-violet;
+        }
+    }
+}
