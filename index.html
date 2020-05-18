@@ -7,39 +7,39 @@
     <link rel="stylesheet" href="./styles/css/main.css">
 </head>
 <body>
-    <nav class="c-navbar is-scrolled">
+    <nav class="c-navbar">
         <div class="c-navbar__container">
             <div class="c-navbar__row">
                 <a href="#" class="c-navbar__brand"><img src="./images/eazzyrentlogo.png" alt=""></a>
                 <ul class="c-navbar__nav">
                     <li class="c-navbar__nav-item">
-                        <a href="#" class="c-navbar__nav-link">Home</a>
+                        <a href="#home" class="c-navbar__nav-link">Home</a>
                     </li>
                     <li class="c-navbar__nav-item">
-                        <a href="#" class="c-navbar__nav-link">Service</a>
+                        <a href="#about" class="c-navbar__nav-link">About</a>
                     </li>
                     <li class="c-navbar__nav-item">
-                        <a href="#" class="c-navbar__nav-link">Features</a>
+                        <a href="#features" class="c-navbar__nav-link">Features</a>
                     </li>
                     <li class="c-navbar__nav-item">
-                        <a href="#" class="c-navbar__nav-link">Pricing</a>
+                        <a href="#pricing" class="c-navbar__nav-link">Pricing</a>
                     </li>
                     <li class="c-navbar__nav-item">
-                        <a href="#" class="c-navbar__nav-link">Contact</a>
+                        <a href="#contact" class="c-navbar__nav-link">Contact</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="o-home">
+    <div class="o-home" id="home">
         <div class="o-home__bg">
             <img class="o-home__bg-image" src="./images/bg_home_main.jpg" alt="">
         </div>
         <div class="o-home__container">
             <div class="o-home__row">
                 <div class="o-home__col o-home__col--left">
-                    <h1 class="o-home__title">All your real estate operations in one <span class="o-home__title--highlight o-home__title--bold">software</span></h1>
+                    <h1 class="o-home__title">All your real estate operations in one <span class="o-home__title--highlight o-home__title--bold">software</span><br>(With an image on the right depicting our real estate software main modules listed in the last page)</h1>
                     <p class="o-home__sub"> We know that property management is complex and involving. EazzyRent brings
                         professionalism, efficiency and peace of mind to your business.</p>
                         <button class="o-home__cta">Read More</button>
@@ -51,8 +51,11 @@
         </div>
     </div>
 
-    <div class="o-about">
+    <div class="o-about" id="about">
         <div class="o-about__container">
+            <div class="c-section-icon">
+                <img src="./images/icons/mbri-sun.svg" alt="" class="c-section-icon__image">
+            </div>
             <div class="o-about__content">
                 <div class="o-about__section-title">What Is EazzyRent PMS</div>
                 <h2 class="o-about__title">We deliver the software you need to take your business to the next level.</h2>
@@ -63,7 +66,7 @@
             <div class="o-about__row">
                 <div class="o-about__col">
                     <div class="c-about-item">
-                        <div class="c-about-item__icon"></div>
+                        <div class="c-about-item__icon"><img src="./images/icons/mbri-extension.svg" alt=""></div>
                         <div class="c-about-item__title">Core Pms</div>
                         <div class="c-about-item__sub">Create landlords, properties, units and tenants. Invoice for rent, service charge, utility bills and
                             repairs. Create landlord and tenant statements all these with simple intuitive steps. Repetitive
@@ -73,7 +76,7 @@
                 </div>
                 <div class="o-about__col">
                     <div class="c-about-item">
-                        <div class="c-about-item__icon"></div>
+                        <div class="c-about-item__icon"><img src="./images/icons/mbri-briefcase.svg" alt=""></div>
                         <div class="c-about-item__title">Accounting</div>
                         <div class="c-about-item__sub">Your accounting transactions are recorded in real time as you transact. Manage company
                             expenses, suppliers and other transactions. Prepare for auditing and returns by easily
@@ -83,7 +86,7 @@
                 </div>
                 <div class="o-about__col">
                     <div class="c-about-item">
-                        <div class="c-about-item__icon"></div>
+                        <div class="c-about-item__icon"><img src="./images/icons/mbri-rocket.svg" alt=""></div>
                         <div class="c-about-item__title">Other Features</div>
                         <div class="c-about-item__sub">Landlords and tenants self service portal, Bulk payments for landlords and tenants through b2b
                             and b2c disbursements, schedule repetitive tasks, system logs and advanced security.</div>
@@ -96,6 +99,9 @@
 
     <div class="o-integrations">
         <div class="o-integrations__container">
+            <div class="c-section-icon">
+                <img src="./images/icons/mbri-hearth.svg" alt="" class="c-section-icon__image">
+            </div>
             <h2 class="o-integrations__title">Integrations</h2>
             <div class="o-integrations__sub">EazzyRent integrates with local financial institutions to help process rent in real time. Currently
                 supported integrations:</div>
@@ -118,6 +124,9 @@
 
     <div class="o-testimonials">
         <div class="o-testimonials__container">
+            <div class="c-section-icon">
+                <img src="./images/icons/mbri-user.svg" alt="" class="c-section-icon__image">
+            </div>
             <div class="o-testimonials__content">
                 <div class="o-testimonials__section-title">TESTIMONIAL</div>
                 <h2 class="o-testimonials__title">Love By People</h2>
@@ -208,8 +217,11 @@
         </div>
     </div>
 
-    <div class="o-priching">
+    <div class="o-priching" id="pricing">
         <div class="o-priching__container">
+            <div class="c-section-icon">
+                <img src="./images/icons/mbri-idea.svg" alt="" class="c-section-icon__image">
+            </div>
             <div class="o-priching__content">
                 <div class="o-priching__section-title">PRICING</div>
                 <h2 class="o-priching__title">Our Pricing Plan</h2>
@@ -221,7 +233,6 @@
                         <div class="c-package__header">
                             <div class="c-package__name">Lite</div>
                             <div class="c-package__price">Contact Us</div>
-                            <div class="c-package__description">Note: all packages come with a one month free trial</div>
                         </div>
                         <div class="c-package__body">
                             <ul class="c-package__features">
@@ -237,7 +248,7 @@
                             </ul>
                         </div>
                         <div class="c-package__footer">
-                            <a href="#" class="c-package__cta">Purchase Now</a>
+                            <a href="#contact"class="c-package__cta">Purchase Now</a>
                         </div>
                     </div>
                 </div>
@@ -246,7 +257,6 @@
                         <div class="c-package__header">
                             <div class="c-package__name">Bronze</div>
                             <div class="c-package__price">Contact Us</div>
-                            <div class="c-package__description">Note: all packages come with a one month free trial</div>
                         </div>
                         <div class="c-package__body">
                             <ul class="c-package__features">
@@ -262,7 +272,7 @@
                             </ul>
                         </div>
                         <div class="c-package__footer">
-                            <a href="#" class="c-package__cta">Purchase Now</a>
+                            <a href="#contact" class="c-package__cta">Purchase Now</a>
                         </div>
                     </div>
                 </div>
@@ -271,7 +281,6 @@
                         <div class="c-package__header">
                             <div class="c-package__name">Silver</div>
                             <div class="c-package__price">Contact Us</div>
-                            <div class="c-package__description">Note: all packages come with a one month free trial</div>
                         </div>
                         <div class="c-package__body">
                             <ul class="c-package__features">
@@ -287,7 +296,7 @@
                             </ul>
                         </div>
                         <div class="c-package__footer">
-                            <a href="#" class="c-package__cta">Purchase Now</a>
+                            <a href="#contact" class="c-package__cta">Purchase Now</a>
                         </div>
                     </div>
                 </div>
@@ -296,7 +305,6 @@
                         <div class="c-package__header">
                             <div class="c-package__name">Gold</div>
                             <div class="c-package__price">Contact Us</div>
-                            <div class="c-package__description">Note: all packages come with a one month free trial</div>
                         </div>
                         <div class="c-package__body">
                             <ul class="c-package__features">
@@ -312,16 +320,20 @@
                             </ul>
                         </div>
                         <div class="c-package__footer">
-                            <a href="#" class="c-package__cta">Purchase Now</a>
+                            <a href="#contact" class="c-package__cta">Purchase Now</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <div class="o-priching__note">Note: all packages come with a one month free trial</div>
         </div>
     </div>
 
-    <div class="o-contact">
+    <div class="o-contact" id="contact">
         <div class="o-contact__container">
+            <div class="c-section-icon">
+                <img src="./images/icons/mbri-pin.svg" alt="" class="c-section-icon__image">
+            </div>
             <div class="o-contact__content">
                 <div class="o-contact__section-title">Contact Us</div>
                 <h2 class="o-contact__title">Still need more help before you can decide? Contact us.</h2>
@@ -340,7 +352,7 @@
                     </div>
                 </div>
                 <div class="o-contact__col o-contact__col--right">
-                    <form action="" class="o-contact__form">
+                    <div class="o-contact__form">
                         <div class="o-contact__form-title">Company Information</div>
                         <input type="text" class="c-input" name="name" placeholder="Company name">
                         <div class="c-checkbox c-checkbox--radio">
@@ -370,8 +382,8 @@
                         <img src="./images/mpesa_logo.png" alt="" class="o-contact__form-image">
                         <input type="text" class="c-input" placeholder="Reference number">
                         <input type="text" class="c-input" placeholder="Phone number used">
-                        <button class="o-contact__form-submit">Submit</button>
-                    </form>
+                        <a href="https://www.eazzyrent.com/contact"><button class="o-contact__form-submit">Submit</button></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -379,6 +391,9 @@
     
     <div class="o-faq">
         <div class="o-faq__container">
+            <div class="c-section-icon">
+                <img src="./images/icons/mbri-question.svg" alt="" class="c-section-icon__image">
+            </div>
             <div class="o-faq__content">
                 <div class="o-faq__section-title">FAQs</div>
                 <h2 class="o-faq__title">Frequently Asked Questions</h2>
