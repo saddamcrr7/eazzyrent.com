@@ -1095,6 +1095,75 @@ a:hover, a:active, a:focus {
   letter-spacing: 1px;
 }
 
+.o-faq {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  background: #f8f9fa;
+}
+.o-faq__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .o-faq__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .o-faq__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .o-faq__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .o-faq__container {
+    max-width: 1140px;
+  }
+}
+.o-faq__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.o-faq__col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 992px) {
+  .o-faq__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+.o-faq__content {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.o-faq__section-title {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #520FAC;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.o-faq__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
 .c-about-item {
   padding: 30px;
   text-align: center;
@@ -1278,6 +1347,59 @@ a:hover, a:active, a:focus {
   position: absolute;
   top: 50%;
   left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.c-faq {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  padding-left: 50px;
+  position: relative;
+}
+.c-faq__qa {
+  font-weight: 700;
+}
+.c-faq__ans {
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.c-faq:not(.is-active) .c-faq__ans {
+  height: 0px;
+}
+.c-faq__ans-text {
+  font-size: 15px;
+  color: #6c757d;
+  padding-top: 16px;
+}
+.c-faq__toggle {
+  width: 20px;
+  height: 20px;
+  border-radius: 18px;
+  background: #520FAC;
+  position: absolute;
+  top: 18px;
+  left: 15px;
+  cursor: pointer;
+}
+.c-faq__toggle:before, .c-faq__toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  background: #fff;
+  border-radius: 2px;
+  width: 10px;
+  height: 2px;
+  transform: translate(-50%, -50%);
+}
+.c-faq__toggle::before {
+  transform: translate(-50%, -50%) rotate(90deg);
+  transition: 0.3s;
+}
+.c-faq.is-active .c-faq__toggle:before {
   transform: translate(-50%, -50%);
 }
 

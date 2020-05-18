@@ -1,14 +1,14 @@
 var testimonialsSlider = new Swiper('.o-testimonials__slider-container', {
-    loop: true,
-    slidesPerView: 1,
-    spaceBetween: 28.5,
-    wrapperClass: 'o-testimonials__slider-wrapper',
-    slideClass: 'o-testimonials__slider-item',
-    slideActiveClass: 'o-testimonials__slider-item--slide-active',
-    pagination: {
-        el: '.o-testimonials__slider-pagination',
-        clickable: true,
-    }
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 28.5,
+  wrapperClass: 'o-testimonials__slider-wrapper',
+  slideClass: 'o-testimonials__slider-item',
+  slideActiveClass: 'o-testimonials__slider-item--slide-active',
+  pagination: {
+    el: '.o-testimonials__slider-pagination',
+    clickable: true,
+  }
 });
 
 
@@ -25,3 +25,40 @@ checkboxs.forEach(function (checkbox) {
     });
   });
 });
+
+
+var faqItems = document.querySelectorAll('.c-faq')
+
+if (faqItems.length) {
+  faqItems.forEach(faqItem => {
+    var isOpen = 0
+    var toggleBtn = faqItem.querySelector('.c-faq__toggle')
+    var faqAns = faqItem.querySelector('.c-faq__ans')
+    var faqAnsText = faqItem.querySelector('.c-faq__ans-text')
+
+    toggleBtn.addEventListener('click', () => {
+
+      faqItem.classList.forEach(cls => {
+        if (cls.indexOf(`is-active`) !== -1) {
+          faqItem.classList.remove('is-active')
+          faqAns.style.height = `0px`
+          isOpen = 0
+        } else {
+          if (isOpen == 0) {
+            faqItem.classList.add('is-active')
+            faqAns.style.height = `${faqAnsText.offsetHeight}px`
+            isOpen = !0
+          } else {
+            faqItem.classList.remove('is-active')
+            faqAns.style.height = `0px`
+            isOpen = 0
+          }
+        }
+    })
+
+      
+
+
+    })
+  })
+}
