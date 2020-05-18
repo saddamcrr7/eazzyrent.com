@@ -1,0 +1,65 @@
+.c-faq {
+    $root: &;
+
+    background-color: $white;
+    margin-bottom: 10px;
+    padding: 15px 30px;
+    border-radius: 5px;
+    padding-left: 50px;
+    position: relative;
+
+    &__qa {
+        font-weight: $font-weight-bold;
+    }
+    &__ans {
+        overflow: hidden;
+        @include basic-transition()
+    }
+
+    &:not(.is-active) {
+        #{$root}__ans {
+            height: 0px;
+        }
+    }
+
+    &__ans-text {
+        font-size: 15px;
+        color: $color-grey;
+        padding-top: 16px;
+    }
+
+    &__toggle {
+        width: 20px;
+        height: 20px;
+        border-radius: 18px;
+        background: $color-violet;
+        position: absolute;
+        top: 18px;
+        left: 15px;
+        cursor: pointer;
+
+        &:before, &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center;
+            background: #fff;
+            border-radius: 2px;
+            width: 10px;
+            height: 2px;
+            transform: translate(-50%, -50%);
+        }
+    
+        &::before {
+            transform: translate(-50%, -50%) rotate(90deg);
+            transition: 0.3s;
+        }
+    }
+
+    &.is-active {
+        #{$root}__toggle:before {
+            transform: translate(-50%, -50%);
+        }
+    }
+}
