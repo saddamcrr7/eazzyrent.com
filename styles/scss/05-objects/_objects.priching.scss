@@ -56,4 +56,11 @@
         color: $color-grey;
         margin-bottom: 20px;
     }
+
+    &__note{
+        font-size: 15px;
+        color: $color-grey;
+        text-align: center;
+        margin-top: 30px;
+    }
 }

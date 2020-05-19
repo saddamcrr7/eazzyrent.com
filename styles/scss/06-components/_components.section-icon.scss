@@ -1,0 +1,17 @@
+.c-section-icon {
+    width: 70px;
+    height: 70px;
+    background: $color-violet;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border-radius: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__image{ 
+        width: 34px;
+        height: 34px;
+    }
+}
