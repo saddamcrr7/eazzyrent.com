@@ -1438,7 +1438,7 @@ a:hover, a:active, a:focus {
   border-radius: 18px;
   background: #1fc341;
   position: absolute;
-  top: 18px;
+  top: 16px;
   left: 15px;
   cursor: pointer;
 }
