@@ -5,11 +5,8 @@
     left: 0;
     z-index: 99;
     transition: 0.3s;
-
-    &.is-scrolled {
-        background: $white;
-        box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 18px 1px;
-    }
+    background: $color-blue;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 18px 1px;
 
     &__container {
         @include make-container();
@@ -41,7 +38,7 @@
     &__nav-link {
         font-size: 15px;
         font-weight: $font-weight-bold;
-        color: $black;
+        color: $white;
         margin: 0 7px;
         padding: 8px;
         transition: 0.3s;

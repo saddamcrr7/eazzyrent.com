@@ -518,6 +518,7 @@ a:hover, a:active, a:focus {
 .o-home__bg-image {
   width: 100%;
   height: 100%;
+  filter: hue-rotate(-112deg) brightness(2.2);
   object-fit: cover;
   object-position: center;
 }
@@ -583,18 +584,18 @@ a:hover, a:active, a:focus {
   margin-bottom: 16px;
 }
 .o-home__title--highlight {
-  color: #520FAC;
+  color: #1fc341;
 }
 .o-home__title--bold {
   font-weight: 700 !important;
 }
 .o-home__sub {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
 }
 .o-home__cta {
-  border: 1px solid #520FAC;
-  background-color: #520FAC;
+  border: 1px solid #1fc341;
+  background-color: #1fc341;
   font-weight: 700;
   border-radius: 4px;
   padding: 13px 32px;
@@ -680,7 +681,7 @@ a:hover, a:active, a:focus {
 .o-about__section-title {
   font-size: 14px;
   letter-spacing: 4px;
-  color: #520FAC;
+  color: #1fc341;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -692,7 +693,7 @@ a:hover, a:active, a:focus {
 }
 .o-about__sub {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
 }
 
 .o-integrations {
@@ -789,7 +790,7 @@ a:hover, a:active, a:focus {
 .o-testimonials__section-title {
   font-size: 14px;
   letter-spacing: 4px;
-  color: #520FAC;
+  color: #1fc341;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -801,7 +802,7 @@ a:hover, a:active, a:focus {
 }
 .o-testimonials__sub {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
   margin-bottom: 20px;
 }
 .o-testimonials__slider {
@@ -837,8 +838,8 @@ a:hover, a:active, a:focus {
   width: 12px;
   height: 7px;
   margin: 20px 5px;
-  border: 1px solid #520FAC;
-  background-color: #520FAC;
+  border: 1px solid #1fc341;
+  background-color: #1fc341;
   opacity: 0.4;
   cursor: pointer;
   border-radius: 3px;
@@ -916,7 +917,7 @@ a:hover, a:active, a:focus {
 .o-priching__section-title {
   font-size: 14px;
   letter-spacing: 4px;
-  color: #520FAC;
+  color: #1fc341;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -928,7 +929,7 @@ a:hover, a:active, a:focus {
 }
 .o-priching__sub {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
   margin-bottom: 20px;
 }
 
@@ -993,7 +994,7 @@ a:hover, a:active, a:focus {
 .o-contact__section-title {
   font-size: 14px;
   letter-spacing: 4px;
-  color: #520FAC;
+  color: #1fc341;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -1008,11 +1009,11 @@ a:hover, a:active, a:focus {
   line-height: 1.6;
   box-shadow: 0 0 35px rgba(112, 112, 112, 0.1);
   border-radius: 16px;
-  background-color: #ffffff;
+  background-color: #22355b;
   margin-bottom: 20px;
   padding: 48px;
   padding-top: 25px;
-  color: #6c757d;
+  color: #fff;
 }
 @media (min-width: 992px) {
   .o-contact__description {
@@ -1025,11 +1026,12 @@ a:hover, a:active, a:focus {
   background-color: #ffffff;
   padding: 48px;
 }
-.o-contact__form .c-input, .o-contact__form .c-checkbox {
+.o-contact__form .c-input,
+.o-contact__form .c-checkbox {
   margin-bottom: 15px;
 }
 .o-contact__form-title {
-  color: #520FAC;
+  color: #1fc341;
   letter-spacing: 1.5px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1040,7 +1042,7 @@ a:hover, a:active, a:focus {
 }
 .o-contact__form-sub {
   font-size: 14px;
-  color: #6c757d;
+  color: #999;
 }
 .o-contact__form-image {
   max-width: 100px;
@@ -1056,8 +1058,8 @@ a:hover, a:active, a:focus {
   box-shadow: none !important;
   text-transform: capitalize;
   outline: none !important;
-  border: 1px solid #520FAC;
-  background-color: #520FAC;
+  border: 1px solid #1fc341;
+  background-color: #1fc341;
   font-weight: 700;
   border-radius: 4px;
   cursor: pointer;
@@ -1122,7 +1124,7 @@ a:hover, a:active, a:focus {
 .o-faq__section-title {
   font-size: 14px;
   letter-spacing: 4px;
-  color: #520FAC;
+  color: #1fc341;
   font-weight: 500;
   text-transform: uppercase;
   margin-bottom: 16px;
@@ -1140,9 +1142,7 @@ a:hover, a:active, a:focus {
   left: 0;
   z-index: 99;
   transition: 0.3s;
-}
-.c-navbar.is-scrolled {
-  background: #fff;
+  background: #22355b;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 18px 1px;
 }
 .c-navbar__container {
@@ -1190,13 +1190,13 @@ a:hover, a:active, a:focus {
 .c-navbar__nav-link {
   font-size: 15px;
   font-weight: 700;
-  color: #000;
+  color: #fff;
   margin: 0 7px;
   padding: 8px;
   transition: 0.3s;
 }
 .c-navbar__nav-link:hover {
-  color: #520FAC;
+  color: #1fc341;
 }
 
 .c-about-item {
@@ -1210,13 +1210,13 @@ a:hover, a:active, a:focus {
 }
 .c-about-item__sub {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
   margin-bottom: 16px;
 }
 .c-about-item__cta {
   font-size: 15px;
   font-weight: 700;
-  color: #520FAC;
+  color: #1fc341;
 }
 
 .c-testimonial {
@@ -1228,13 +1228,13 @@ a:hover, a:active, a:focus {
   width: 40px;
   height: 40px;
   transform: rotate(180deg);
-  fill: #520FAC;
+  fill: #1fc341;
   margin-left: -7px;
   margin-bottom: 10px;
 }
 .c-testimonial__quote {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
   margin-bottom: 16px;
 }
 .c-testimonial__client-name {
@@ -1246,7 +1246,7 @@ a:hover, a:active, a:focus {
 }
 .c-testimonial__client-properties {
   font-size: 13px;
-  color: #6c757d;
+  color: #999;
 }
 
 .c-package {
@@ -1283,7 +1283,7 @@ a:hover, a:active, a:focus {
 }
 .c-package__feature {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
   margin-bottom: 8px;
 }
 .c-package__footer {
@@ -1296,8 +1296,8 @@ a:hover, a:active, a:focus {
   transition: all 0.5s;
   letter-spacing: 0.6px;
   color: #fff;
-  border: 2px solid #520FAC;
-  background-color: #520FAC;
+  border: 2px solid #1fc341;
+  background-color: #1fc341;
   font-weight: 700;
   border-radius: 35px;
 }
@@ -1305,7 +1305,7 @@ a:hover, a:active, a:focus {
   color: #fff;
 }
 .c-package.is-active {
-  background-color: #520FAC;
+  background-color: #1fc341;
 }
 .c-package.is-active .c-package__header, .c-package.is-active .c-package__description, .c-package.is-active .c-package__feature {
   color: #fff;
@@ -1329,6 +1329,10 @@ a:hover, a:active, a:focus {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+.c-input:hover, .c-input:active, .c-input:focus {
+  border-color: #1fc341;
+  outline: none;
+}
 
 .c-checkbox {
   display: flex;
@@ -1346,12 +1350,12 @@ a:hover, a:active, a:focus {
   cursor: pointer;
 }
 .c-checkbox__label {
-  color: #6c757d;
+  color: #999;
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
 }
 .c-checkbox.is-checked:not(.c-checkbox--radio) .c-checkbox__input {
-  background: #520FAC;
+  background: #1fc341;
   position: relative;
 }
 .c-checkbox.is-checked:not(.c-checkbox--radio) .c-checkbox__input::before {
@@ -1369,7 +1373,7 @@ a:hover, a:active, a:focus {
   border: 1px solid #8D8C95;
 }
 .c-checkbox--radio.is-checked .c-checkbox__input {
-  border: 1px solid #520FAC;
+  border: 1px solid #1fc341;
   position: relative;
 }
 .c-checkbox--radio.is-checked .c-checkbox__input::before {
@@ -1378,7 +1382,7 @@ a:hover, a:active, a:focus {
   width: 10px;
   height: 10px;
   border-radius: 5px;
-  background: #520FAC;
+  background: #1fc341;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1405,14 +1409,14 @@ a:hover, a:active, a:focus {
 }
 .c-faq__ans-text {
   font-size: 15px;
-  color: #6c757d;
+  color: #999;
   padding-top: 16px;
 }
 .c-faq__toggle {
   width: 20px;
   height: 20px;
   border-radius: 18px;
-  background: #520FAC;
+  background: #1fc341;
   position: absolute;
   top: 18px;
   left: 15px;
