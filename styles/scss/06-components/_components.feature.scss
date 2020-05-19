@@ -1,0 +1,26 @@
+.c-feature {
+    height: 100%;
+    padding: 30px;
+    box-shadow: 0 0 35px rgba(112, 112, 112, 0.1);
+
+    &__icon {
+        margin-bottom: 16px;
+
+        img {
+            width: 45px;
+            height: 45px;
+        }
+    }
+
+    &__title {
+        font-size: 20px;
+        font-weight: $font-weight-medium;
+        margin-bottom: 10px;
+    }
+
+    &__sub {
+        font-size: 15px;
+        color: $color-grey;
+        line-height: 1.8;
+    }
+}

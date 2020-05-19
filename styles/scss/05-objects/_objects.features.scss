@@ -1,0 +1,51 @@
+.o-features {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &__container {
+        @include make-container();
+        @include make-container-max-widths();
+    }
+
+    &__row {
+        @include make-row();
+    }
+
+    &__col {
+        @include make-col-ready();
+        margin-top: 30px;
+
+        @include media-breakpoint-up(md) {
+            @include make-col(6)
+        }
+
+        @include media-breakpoint-up(md) {
+            @include make-col(4)
+        }
+    }
+
+    &__content {
+        text-align: center;
+    }
+
+    &__section-title {
+        font-size: 14px;
+        letter-spacing: 4px;
+        color: $color-violet;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    &__title {
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 16px;
+    }
+
+    &__sub {
+        font-size: 15px;
+        color: $color-grey;
+        margin-bottom: 20px;
+    }
+}

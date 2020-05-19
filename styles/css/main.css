@@ -1142,6 +1142,84 @@ a:hover, a:active, a:focus {
   margin-bottom: 16px;
 }
 
+.o-features {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.o-features__container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 576px) {
+  .o-features__container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .o-features__container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .o-features__container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .o-features__container {
+    max-width: 1140px;
+  }
+}
+.o-features__row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.o-features__col {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .o-features__col {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .o-features__col {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+.o-features__content {
+  text-align: center;
+}
+.o-features__section-title {
+  font-size: 14px;
+  letter-spacing: 4px;
+  color: #1fc341;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.o-features__title {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.o-features__sub {
+  font-size: 15px;
+  color: #999;
+  margin-bottom: 20px;
+}
+
 .c-navbar {
   position: fixed;
   top: 0;
@@ -1438,7 +1516,7 @@ a:hover, a:active, a:focus {
   border-radius: 18px;
   background: #1fc341;
   position: absolute;
-  top: 18px;
+  top: 16px;
   left: 15px;
   cursor: pointer;
 }
@@ -1477,6 +1555,29 @@ a:hover, a:active, a:focus {
 .c-section-icon__image {
   width: 34px;
   height: 34px;
+}
+
+.c-feature {
+  height: 100%;
+  padding: 30px;
+  box-shadow: 0 0 35px rgba(112, 112, 112, 0.1);
+}
+.c-feature__icon {
+  margin-bottom: 16px;
+}
+.c-feature__icon img {
+  width: 45px;
+  height: 45px;
+}
+.c-feature__title {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.c-feature__sub {
+  font-size: 15px;
+  color: #999;
+  line-height: 1.8;
 }
 
 .u-clearfix:after {
