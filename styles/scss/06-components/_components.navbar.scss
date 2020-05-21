@@ -1,4 +1,6 @@
 .c-navbar {
+    $root: &;
+
     position: fixed;
     top: 0;
     right: 0;
@@ -16,6 +18,10 @@
     &__row {
         display: flex;
         align-items: center;
+
+        @include media-breakpoint-down(md) {
+            justify-content: space-between;
+        }
     }
 
     &__brand {
@@ -28,12 +34,46 @@
         align-items: center;
         flex-wrap: wrap;
         list-style: none;
-        margin-bottom: 0;
+        margin-bottom: -7px;
+
+        @include media-breakpoint-down(md) {
+            position: absolute;
+            top: 69px;
+            left: 0;
+            right: 0;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            background: $color-blue;
+            height: 0px;
+            overflow: hidden;
+            transition: 0.3s;
+        }
     }
 
-    &__nav-item {
+    &__toggler {
+        display: none;
 
+        @include media-breakpoint-down(md) {
+            width: 28px;
+            position: relative;
+            cursor: pointer;
+            display: block;
+
+            span {
+                width: 100%;
+                height: 3px;
+                background: $white;
+                display: block;
+                margin-bottom: 4px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
     }
+
+    &__nav-item {}
 
     &__nav-link {
         font-size: 15px;
@@ -46,5 +86,21 @@
         @include on-event {
             color: $color-violet;
         }
+
+        @include media-breakpoint-down(md) {
+            font-size: 20px;
+            margin-bottom: 15px;
+            display: block;
+        }
+    }
+
+    &--mobile-open {
+
+        @include media-breakpoint-down(md) {
+            #{$root}__nav {
+                height: 345px;
+            }
+        }
+
     }
 }

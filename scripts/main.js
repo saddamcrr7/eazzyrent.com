@@ -1,6 +1,20 @@
+const pageHeader = document.querySelector(".c-navbar")
+const toggler = document.querySelector(".c-navbar__toggler")
+const openClassName = "c-navbar--mobile-open"
+
+toggler.addEventListener('click', () => {
+  pageHeader.classList.forEach(cls => {
+    if (cls.indexOf(openClassName) !== -1) {
+      pageHeader.classList.remove(openClassName)
+    } else {
+      pageHeader.classList.add(openClassName)
+    }
+  })
+})
+
 var testimonialsSlider = new Swiper('.o-testimonials__slider-container', {
-  loop: true,
-  slidesPerView: 1,
+  slidesPerGroup: 3,
+  slidesPerView: 3,
   spaceBetween: 28.5,
   wrapperClass: 'o-testimonials__slider-wrapper',
   slideClass: 'o-testimonials__slider-item',
@@ -8,8 +22,19 @@ var testimonialsSlider = new Swiper('.o-testimonials__slider-container', {
   pagination: {
     el: '.o-testimonials__slider-pagination',
     clickable: true,
-  }
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+    },
+  },
 });
+
+console.log(testimonialsSlider);
+
 
 
 var checkboxs = document.querySelectorAll('.c-checkbox');
@@ -54,7 +79,7 @@ if (faqItems.length) {
             isOpen = 0
           }
         }
-    })
+      })
     })
   })
 }

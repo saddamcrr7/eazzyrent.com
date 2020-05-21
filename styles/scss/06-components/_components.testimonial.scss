@@ -1,27 +1,52 @@
 .c-testimonial {
     background: $white;
     padding: 20px;
-    margin-left: 20px;
+    position: relative;
 
-    &__icon svg{
+    &__icon svg {
         width: 40px;
         height: 40px;
         transform: rotate(180deg);
         fill: $color-violet;
-        margin:  {
+        position: absolute;
+        left: 20px;
+        top: 120px;
+
+        margin: {
             left: -7px;
             bottom: 10px;
-        };
+        }
+
+        ;
     }
 
     &__quote {
         font-size: 15px;
         color: $color-grey;
-        // text-align: center;
         margin-bottom: 16px;
+        text-align: center;
     }
 
     &__client {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+
+    &__client-image {
+        width: 80px;
+        height: 80px;
+        border-radius: 40px;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 16px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
     }
 
     &__client-name {
@@ -31,10 +56,21 @@
 
     &__client-company {
         font-size: 14px;
+        color: $color-grey;
     }
 
-    &__client-properties {
+    &__properties {
+        display: flex;
+        align-items: center;
+    }
+    &__properties-icon{
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+    }
+    &__properties-text{
         font-size: 13px;
+        margin-top: 1px;
         color: $color-grey;
     }
 }
