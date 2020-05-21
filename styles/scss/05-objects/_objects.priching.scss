@@ -16,6 +16,7 @@
     }
 
     &__col {
+        margin-bottom: 30px;
         @include make-col-ready();
 
         @include media-breakpoint-up(sm) {
@@ -57,10 +58,12 @@
         margin-bottom: 20px;
     }
 
-    &__note{
+    &__note {
         font-size: 15px;
-        color: $color-grey;
+        color: $color-blue;
         text-align: center;
         margin-top: 30px;
+        font-weight: $font-weight-medium;
+        letter-spacing: 7.5;
     }
 }
