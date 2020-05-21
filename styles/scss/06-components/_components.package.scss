@@ -41,7 +41,8 @@
     &__feature {
         font-size: 15px;
         color: $color-grey;
-        margin-bottom: 8px;
+        border-bottom: 1px dashed $color-grey;
+        padding: 10px 5px;
     }
 
     &__footer {
@@ -69,8 +70,13 @@
         background-color: $color-violet;
 
         #{$root} {
+            &__feature {
+                border-color: $white;
+            }
 
-            &__header,&__description, &__feature {
+            &__header,
+            &__description,
+            &__feature {
                 color: $white;
             }
 
