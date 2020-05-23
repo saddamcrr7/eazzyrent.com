@@ -1449,8 +1449,13 @@ a:hover, a:active, a:focus {
   font-weight: 700;
 }
 .c-testimonial__client-company {
+  font-size: 13px;
+  color: #22355b;
+}
+.c-testimonial__client-position {
   font-size: 14px;
   color: #999;
+  font-weight: 500;
 }
 .c-testimonial__properties {
   display: flex;

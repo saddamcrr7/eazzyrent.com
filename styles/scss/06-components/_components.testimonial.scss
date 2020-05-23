@@ -55,8 +55,14 @@
     }
 
     &__client-company {
+        font-size: 13px;
+        color: $color-blue;
+    }
+
+    &__client-position{
         font-size: 14px;
         color: $color-grey;
+        font-weight: $font-weight-medium;
     }
 
     &__properties {
