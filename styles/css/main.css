@@ -1040,8 +1040,11 @@ a:hover, a:active, a:focus {
 }
 @media (min-width: 992px) {
   .o-contact__description {
-    margin-top: 150px;
+    margin-top: 120px;
   }
+}
+.o-contact__description-text {
+  margin-bottom: 15px;
 }
 .o-contact__form {
   box-shadow: 0 0 35px rgba(112, 112, 112, 0.1);
@@ -1087,6 +1090,22 @@ a:hover, a:active, a:focus {
   border-radius: 4px;
   cursor: pointer;
   letter-spacing: 1px;
+}
+.o-contact__soicals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.o-contact__social svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+.o-contact__social svg path {
+  fill: #fff !important;
+}
+.o-contact #Mesage {
+  height: 110px;
 }
 
 .o-faq {
