@@ -1107,6 +1107,9 @@ a:hover, a:active, a:focus {
 .o-contact #Mesage {
   height: 110px;
 }
+.o-contact__package {
+  position: relative;
+}
 
 .o-faq {
   padding-top: 80px;
@@ -1559,6 +1562,35 @@ a:hover, a:active, a:focus {
 .c-input:hover, .c-input:active, .c-input:focus {
   border-color: #1fc341;
   outline: none;
+}
+.c-input__dropdown {
+  position: absolute;
+  top: calc(100%);
+  left: 0;
+  width: 250px;
+  height: 170px;
+  overflow: auto;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  background: #fff;
+  display: none;
+}
+.c-input__dropdown.is-active {
+  display: block;
+}
+.c-input__dropdown-item {
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #f8f9fa;
+}
+.c-input__dropdown-item:last-child {
+  border-bottom: none;
 }
 
 .c-checkbox {
