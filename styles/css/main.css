@@ -1485,6 +1485,20 @@ a:hover, a:active, a:focus {
   text-align: center;
   margin-bottom: 10px;
 }
+.c-package__icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background: #1fc341;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.c-package__icon svg {
+  fill: #fff;
+}
 .c-package__name {
   font-size: 20px;
   font-weight: 700;
@@ -1542,6 +1556,12 @@ a:hover, a:active, a:focus {
 }
 .c-package.is-active .c-package__cta {
   border-color: #fff;
+}
+.c-package.is-active .c-package__icon {
+  background: #fff;
+}
+.c-package.is-active .c-package__icon svg {
+  fill: #1fc341;
 }
 
 .c-input {
