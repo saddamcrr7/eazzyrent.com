@@ -19,9 +19,7 @@
         display: flex;
         align-items: center;
 
-        @include media-breakpoint-down(md) {
             justify-content: space-between;
-        }
     }
 
     &__brand {
@@ -51,13 +49,14 @@
     }
 
     &__toggler {
-        display: none;
+        visibility: hidden;
 
         @include media-breakpoint-down(md) {
             width: 28px;
             position: relative;
             cursor: pointer;
             display: block;
+            visibility: visible;
 
             span {
                 width: 100%;

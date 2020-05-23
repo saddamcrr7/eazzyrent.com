@@ -1298,11 +1298,7 @@ a:hover, a:active, a:focus {
 .c-navbar__row {
   display: flex;
   align-items: center;
-}
-@media (max-width: 991.98px) {
-  .c-navbar__row {
-    justify-content: space-between;
-  }
+  justify-content: space-between;
 }
 .c-navbar__brand {
   margin-right: 40px;
@@ -1330,7 +1326,7 @@ a:hover, a:active, a:focus {
   }
 }
 .c-navbar__toggler {
-  display: none;
+  visibility: hidden;
 }
 @media (max-width: 991.98px) {
   .c-navbar__toggler {
@@ -1338,6 +1334,7 @@ a:hover, a:active, a:focus {
     position: relative;
     cursor: pointer;
     display: block;
+    visibility: visible;
   }
   .c-navbar__toggler span {
     width: 100%;
