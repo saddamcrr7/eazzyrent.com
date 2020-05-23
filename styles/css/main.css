@@ -1040,8 +1040,11 @@ a:hover, a:active, a:focus {
 }
 @media (min-width: 992px) {
   .o-contact__description {
-    margin-top: 150px;
+    margin-top: 120px;
   }
+}
+.o-contact__description-text {
+  margin-bottom: 15px;
 }
 .o-contact__form {
   box-shadow: 0 0 35px rgba(112, 112, 112, 0.1);
@@ -1087,6 +1090,25 @@ a:hover, a:active, a:focus {
   border-radius: 4px;
   cursor: pointer;
   letter-spacing: 1px;
+}
+.o-contact__soicals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.o-contact__social svg {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+.o-contact__social svg path {
+  fill: #fff !important;
+}
+.o-contact #Mesage {
+  height: 110px;
+}
+.o-contact__package {
+  position: relative;
 }
 
 .o-faq {
@@ -1430,8 +1452,13 @@ a:hover, a:active, a:focus {
   font-weight: 700;
 }
 .c-testimonial__client-company {
+  font-size: 13px;
+  color: #22355b;
+}
+.c-testimonial__client-position {
   font-size: 14px;
   color: #999;
+  font-weight: 500;
 }
 .c-testimonial__properties {
   display: flex;
@@ -1457,6 +1484,20 @@ a:hover, a:active, a:focus {
 .c-package__header {
   text-align: center;
   margin-bottom: 10px;
+}
+.c-package__icon {
+  width: 60px;
+  height: 60px;
+  margin: auto;
+  background: #1fc341;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.c-package__icon svg {
+  fill: #fff;
 }
 .c-package__name {
   font-size: 20px;
@@ -1516,6 +1557,12 @@ a:hover, a:active, a:focus {
 .c-package.is-active .c-package__cta {
   border-color: #fff;
 }
+.c-package.is-active .c-package__icon {
+  background: #fff;
+}
+.c-package.is-active .c-package__icon svg {
+  fill: #1fc341;
+}
 
 .c-input {
   height: 50px;
@@ -1535,6 +1582,35 @@ a:hover, a:active, a:focus {
 .c-input:hover, .c-input:active, .c-input:focus {
   border-color: #1fc341;
   outline: none;
+}
+.c-input__dropdown {
+  position: absolute;
+  top: calc(100%);
+  left: 0;
+  width: 250px;
+  height: 170px;
+  overflow: auto;
+  padding: 10px 5px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  background: #fff;
+  display: none;
+}
+.c-input__dropdown.is-active {
+  display: block;
+}
+.c-input__dropdown-item {
+  color: #000;
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: 5px 20px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-bottom: 1px solid #f8f9fa;
+}
+.c-input__dropdown-item:last-child {
+  border-bottom: none;
 }
 
 .c-checkbox {
