@@ -17,4 +17,36 @@
         border-color: $color-violet;
         outline: none;
     }
+
+    &__dropdown {
+        position: absolute;
+        top: calc(100%);
+        left: 0;
+        width: 250px;
+        height: 170px;
+        overflow: auto;
+        padding: 10px 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba($black, 0.2);
+        z-index: 999;
+        background: $white;
+        display: none;
+    
+       &.is-active {
+         display: block;
+       }
+      }
+    
+      &__dropdown-item {
+        color: $black;
+        font-size: 16px;
+        letter-spacing: 0;
+        padding: 5px 20px;
+        margin-bottom: 5px;
+        cursor: pointer;
+        border-bottom: 1px solid $color-light;
+        &:last-child{
+            border-bottom: none;
+        }
+      }
 }
