@@ -26,6 +26,7 @@ var testimonialsSlider = new Swiper('.o-testimonials__slider-container', {
   breakpoints: {
     640: {
       slidesPerView: 1,
+      slidesPerGroup: 1,
     },
     768: {
       slidesPerView: 2,
