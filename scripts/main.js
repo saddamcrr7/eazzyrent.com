@@ -30,6 +30,7 @@ var testimonialsSlider = new Swiper('.o-testimonials__slider-container', {
     },
     768: {
       slidesPerView: 2,
+      slidesPerGroup: 2,
     },
   },
 });
